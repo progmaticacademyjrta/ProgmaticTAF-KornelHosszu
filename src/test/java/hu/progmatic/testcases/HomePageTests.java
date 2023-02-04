@@ -8,12 +8,12 @@ import org.testng.annotations.Test;
 
 public class HomePageTests extends DriverBaseTest {
     HomePage homePage;
-    @Test(groups ="Smoke Test",description = "TC01: Homepage loaded test that loads the page and validates whether the header is displayed or not.")
+    @Test(description = "TC01: Homepage loaded test that loads the page and validates whether the header is displayed or not.")
     public void homepageLoadedTest() {
         homePage = new HomePage(driver, wait);
         homePage.loadHomePage();
     }
-    @Test(description = "TC02: Make Appointment button clickable and works")
+    @Test(groups ="Smoke Test",description = "TC02: Make Appointment button clickable and works")
     public void MakeAppoitmentButtonTest() throws InterruptedException {
         homePage = new HomePage(driver, wait);
         homePage.loadHomePage();
