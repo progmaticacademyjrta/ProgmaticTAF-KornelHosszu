@@ -8,13 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AppointPageTests extends DriverBaseTest {
-
     HomePage homePage;
     LoginPage loginPage;
-
     AppointmentPage appointmentPage;
-
-
     @Test(description = "TC:04 Appointment from loaded and works")
     public void validAppointmentTest() throws InterruptedException {
         homePage = new HomePage(driver, wait);
@@ -32,7 +28,5 @@ public class AppointPageTests extends DriverBaseTest {
         appointmentPage.commentTextBox();
         appointmentPage.bookAppointmentButton();
         Assert.assertEquals("https://katalon-demo-cura.herokuapp.com/appointment.php#summary",driver.getCurrentUrl());
-
-
     }
 }

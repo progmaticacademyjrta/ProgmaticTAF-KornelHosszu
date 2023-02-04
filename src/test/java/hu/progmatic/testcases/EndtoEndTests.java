@@ -6,17 +6,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class EndtoEndTests extends DriverBaseTest {
-
     HomePage homePage;
-
     LoginPage loginPage;
-
     AppointmentPage appointmentPage;
-
     ProfilPage profilPage;
-
     Allpage allpage;
-
     @Test(description = "TC06: End to End test for that includes all features of the site")
     public void allFunctionTest()throws InterruptedException{
         homePage = new HomePage(driver, wait);
@@ -39,7 +33,5 @@ public class EndtoEndTests extends DriverBaseTest {
        Thread.sleep(4000);
         allpage.logoutButton();
         Assert.assertEquals("https://katalon-demo-cura.herokuapp.com/",driver.getCurrentUrl());
-
-
     }
 }

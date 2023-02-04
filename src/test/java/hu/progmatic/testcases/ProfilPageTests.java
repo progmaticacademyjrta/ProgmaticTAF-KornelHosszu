@@ -9,15 +9,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ProfilPageTests extends DriverBaseTest {
-
     HomePage homePage;
-
     LoginPage loginPage;
-
     AppointmentPage appointmentPage;
-
     ProfilPage profilPage;
-
     @Test(description = "TC05: Profil page succefully load and works properly")
     public void profilPageTest()throws InterruptedException{
         homePage = new HomePage(driver, wait);
@@ -31,8 +26,6 @@ public class ProfilPageTests extends DriverBaseTest {
         appointmentPage.loginbutton();
         profilPage.menuButton();
         profilPage.profilPageButton();
-
-
     }
 
 }
