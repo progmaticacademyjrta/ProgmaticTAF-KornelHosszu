@@ -11,7 +11,7 @@ public class EndtoEndTests extends DriverBaseTest {
     AppointmentPage appointmentPage;
     ProfilPage profilPage;
     Allpage allpage;
-    @Test(description = "TC06: End to End test for that includes all features of the site")
+    @Test( groups ="Smoke Test",description = "TC06: End to End test for that includes all features of the site")
     public void allFunctionTest()throws InterruptedException{
         homePage = new HomePage(driver, wait);
         loginPage = new LoginPage(driver, wait);

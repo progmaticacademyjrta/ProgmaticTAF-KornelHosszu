@@ -11,7 +11,7 @@ public class AppointPageTests extends DriverBaseTest {
     HomePage homePage;
     LoginPage loginPage;
     AppointmentPage appointmentPage;
-    @Test(description = "TC:04 Appointment from loaded and works")
+    @Test(groups ="Smoke Test",description = "TC:04 Appointment from loaded and works")
     public void validAppointmentTest() throws InterruptedException {
         homePage = new HomePage(driver, wait);
         loginPage = new LoginPage(driver, wait);

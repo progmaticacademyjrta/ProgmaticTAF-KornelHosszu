@@ -13,7 +13,7 @@ public class ProfilPageTests extends DriverBaseTest {
     LoginPage loginPage;
     AppointmentPage appointmentPage;
     ProfilPage profilPage;
-    @Test(description = "TC05: Profil page succefully load and works properly")
+    @Test(groups ="Smoke Test",description = "TC05: Profil page succefully load and works properly")
     public void profilPageTest()throws InterruptedException{
         homePage = new HomePage(driver, wait);
         loginPage = new LoginPage(driver, wait);
